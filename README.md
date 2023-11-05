@@ -1,7 +1,8 @@
-# Welcome to streamlit
+# Welcome to Crop Guardian 
 
-This is the app you get when you run `streamlit hello`, extracted as its own app.
+Built for farmers, gardeners, and everyone
+Powered by fine-tuned machine learning models,
+- Upload an image of your crop
+- Get a diagnosis and treatment plan in seconds
 
-Edit [Hello.py](./Hello.py) to customize this app to your heart's desire. ❤️
-
-Check it out on [Streamlit Community Cloud](https://st-hello-app.streamlit.app/)
+Being surrounded by the agriculture and farmlands here at UC Davis, we were inspired to create a project that could help farmers and gardeners quickly diagnose their crops and receive treatment advice and more information from reputable sites. Recognizing the importance of sustainable farming practices in an ever-populating world, we believe that crop disease detection is a key part of shaping efficient food-growing practices and mitigating the spread of threatening diseases.
