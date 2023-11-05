@@ -138,11 +138,11 @@ def predict_image(image_path, model, disease_label, image_dim):
 
 def run():
     st.set_page_config(
-        page_title="",
-        page_icon="",
+        page_title="Crop Guardian",
+        page_icon="🍅 ",
     )
 
-    st.write("# Welcome to Crop Disease Detection! ")
+    st.header("Welcome to Crop Guardian.")
 
     selected_crop_type = st.selectbox("Select a crop type:", ['Fruits', 'Vegetables'])
     
@@ -159,7 +159,7 @@ def run():
     confidence = 0.0
     
    
-    uploaded_image = st.file_uploader("Next, upload an image of your chosen crop!", type=["jpg", "png", "jpeg"])
+    uploaded_image = st.file_uploader("Next, upload an image of your chosen crop.", type=["jpg", "png", "jpeg"])
     run_model_button = st.button("Run Model")
     predicted_class_container = st.empty()
     predicted_confidence_container = st.empty()
