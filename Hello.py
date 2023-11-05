@@ -13,7 +13,7 @@
 # limitations under the License.
 
 import streamlit as st
-#import h5py
+import h5py
 from tensorflow import keras
 from keras.preprocessing import image
 import numpy as np
