@@ -1,0 +1,3 @@
+Description: Leaf Mold is a fungal disease that causes yellow to brownish lesions on tomato leaves. It's common in high humidity and poor ventilation.
+Treatment: Improve air circulation, avoid overhead watering, and use fungicides if necessary.
+More Information: https://extension.umn.edu/disease-management/tomato-leaf-mold

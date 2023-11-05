@@ -1,0 +1,3 @@
+Description: Early Blight is a fungal disease that affects tomato leaves, causing concentric rings of dark lesions. It's prevalent in warm and humid conditions.
+Treatment: Remove infected leaves, apply fungicides, and avoid overhead irrigation.
+More Information: https://extension.umn.edu/disease-management/early-blight-tomato-and-potato

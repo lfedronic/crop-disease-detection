@@ -1,0 +1,3 @@
+Description: Phytophthora is a soil-borne pathogen that causes root and collar rot in guava plants. It thrives in waterlogged soils.
+Treatment: Improve soil drainage, avoid waterlogged conditions, and use disease-resistant rootstocks.
+More Information: https://www.apsnet.org/publications/plantdisease/backissues/Documents/1982Abstracts/PD_66_854.htm

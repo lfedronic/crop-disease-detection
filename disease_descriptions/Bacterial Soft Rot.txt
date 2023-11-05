@@ -1,0 +1,3 @@
+Description: Bacterial Soft Rot is a bacterial disease that affects cauliflower leaves, causing circular, water-soaked lesions. It spreads through rain splashes and irrigation.
+Treatment: Remove infected leaves, apply copper-based sprays, and avoid overhead watering.
+More Information: https://pnwhandbooks.org/plantdisease/host-disease/cabbage-cauliflower-brassica-oleracea-bacterial-soft-rot-erwinia#:~:text=Symptoms%20Small%2C%20water%2Dsoaked%20areas,to%20allow%20good%20air%20drainage

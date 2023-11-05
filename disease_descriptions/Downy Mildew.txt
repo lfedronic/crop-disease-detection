@@ -1,0 +1,3 @@
+Description: Downy Mildew is a fungal disease that causes grayish patches on cauliflower leaves. It spreads through wind-dispersed spores in cool, wet conditions.
+Treatment: Apply fungicides, improve airflow, and avoid overhead irrigation.
+More Information: https://agriculture.vic.gov.au/biosecurity/plant-diseases/vegetable-diseases/downy-mildew-of-brassicas#:~:text=Downy%20mildew%20is%20caused%20by,more%20susceptible%20than%20older%20plants

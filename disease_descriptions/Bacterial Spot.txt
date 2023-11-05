@@ -1,0 +1,3 @@
+Description: Bacterial Spot is a bacterial disease that affects tomato leaves, causing dark, greasy spots with yellow halos. It spreads through rain splashes and contaminated tools.
+Treatment: Remove infected leaves, apply copper-based sprays, and practice crop rotation.
+More Information: https://ipm.ucanr.edu/agriculture/tomato/bacterial-spot/#:~:text=The%20bacterial%20spot%20bacterium%20persists,the%20seed%20or%20on%20transplants.
