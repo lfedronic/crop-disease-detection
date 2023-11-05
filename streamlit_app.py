@@ -66,8 +66,8 @@ tomato_diseases = {
     }
 cauliflower_diseases = {
         0: 'Healthy Cauliflower',
-        1: 'Bacterial Soft Rot',
-        2: 'Black Rot',
+        1: 'Black Rot',
+        2: 'Bacterial Soft Rot',
         3: 'Downy Mildew'
     }
 image_dims = {
