@@ -46,8 +46,8 @@ mango_diseases = {
     }
 guava_diseases = {
         0: 'Root', 
-        1: 'Guava Scab', 
-        2: 'Phytopthora'
+        1: 'Phytopthora', 
+        2: 'Guava Scab'
     }
 apple_diseases = {
         0: 'Blotch',
