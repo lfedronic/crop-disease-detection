@@ -46,13 +46,13 @@ mango_diseases = {
     }
 guava_diseases = {
         0: 'Root', 
-        1: 'Scab', 
+        1: 'Guava Scab', 
         2: 'Phytopthora'
     }
 apple_diseases = {
         0: 'Blotch',
         1: 'Healthy Apple',
-        2: 'Scab',
+        2: 'Apple Scab',
         3: 'Rot'
     }
 tomato_diseases = {
@@ -87,7 +87,7 @@ disease_files = {
     'Black Rot': 'disease_descriptions/Black Rot.txt',
     'Downy Mildew': 'disease_descriptions/Downy Mildew.txt',
     'Root': 'disease_descriptions/Root Rot.txt',
-    'Scab': 'disease_descriptions/Scab.txt',
+    'Guava Scab': 'disease_descriptions/Scab.txt',
     'Phytopthora': 'disease_descriptions/Phytophthora.txt',
     'Bacterial spot': 'disease_descriptions/Bacterial Spot.txt',
     'Early blight': 'disease_descriptions/Early Blight.txt',
@@ -97,7 +97,7 @@ disease_files = {
     'Spider mites': 'disease_descriptions/Spider Mites.txt',
     'Blotch': 'disease_descriptions/Apple Blotch.txt',
     'Rot': 'disease_descriptions/Apple Rot.txt',
-    'Scab': 'disease_descriptions/Apple Scab.txt',
+    'Apple Scab': 'disease_descriptions/Apple Scab.txt',
     'Healthy Apple': 'disease_descriptions/Healthy Apple.txt',
     'Healthy Mango': 'disease_descriptions/Healthy Mango.txt',
     'Healthy Tomato': 'disease_descriptions/Healthy Tomato.txt',
