@@ -1,6 +1,7 @@
 # Welcome to Crop Guardian 
 
 Built for farmers, gardeners, and everyone
+
 Powered by fine-tuned machine learning models,
 - Upload an image of your crop
 - Get a diagnosis and treatment plan in seconds
