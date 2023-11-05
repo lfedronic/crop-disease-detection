@@ -21,6 +21,7 @@ from streamlit.logger import get_logger
 
 LOGGER = get_logger(__name__)
 
+# Set up labels to allow handling of all the different crops and diseases
 crop_labels = {
         0: 'Mango',
         1: 'Guava',
@@ -77,7 +78,7 @@ image_dims = {
         'Tomato plant': (256, 256),
         'Cauliflower': (300, 300)
     }
-
+# create mapping between prediction class (disease) and the text file hosting the descriptions, treatments tips, etc.
 disease_files = {
     'Alternaria': 'disease_descriptions/Alternaria.txt',
     'Anthracnose': 'disease_descriptions/Anthracnose.txt',
@@ -112,12 +113,13 @@ guava_model = keras.models.load_model('guava_disease_model81.h5')
 apple_model = keras.models.load_model('apple_disease_model85.h5')
 tomato_model = keras.models.load_model('tomatoplant_disease_model90.h5')
 cauliflower_model = keras.models.load_model('cauliflower_disease_model85.h5')
-    
+
+# more necessary mappings
 crop_models = {'Mango': mango_model, 'Guava': guava_model, 'Apple': apple_model, 'Tomato plant': tomato_model, 'Cauliflower': cauliflower_model}
 disease_labels = {'Mango': mango_diseases, 'Guava': guava_diseases, 'Apple': apple_diseases, 'Tomato plant': tomato_diseases, 'Cauliflower': cauliflower_diseases}
 
 
-
+# use appropriate crop model to diagnose disease
 def predict_image(image_path, model, disease_label, image_dim):
     img = image.load_img(image_path, target_size=image_dim)
     img_array = image.img_to_array(img)
@@ -128,14 +130,10 @@ def predict_image(image_path, model, disease_label, image_dim):
     prediction = model.predict(img_array)
     class_index = np.argmax(prediction)
     
-
-    # Define class labels based on your mapping
-    
-
     predicted_class = disease_label[class_index]
     confidence = np.max(prediction)
     return predicted_class, confidence
-
+# main loop
 def run():
     st.set_page_config(
         page_title="Crop Guardian",
@@ -143,30 +141,33 @@ def run():
     )
 
     st.header("Welcome to Crop Guardian.")
-
+# set -up drop-down menu for crop type
     selected_crop_type = st.selectbox("Select a crop type:", ['Fruits', 'Vegetables'])
-    
+# dynamic drop-down menus for specific crops  
     if selected_crop_type == 'Fruits':
         crop_options = list(fruit_labels.values())
     else:
         crop_options = list(vegetable_labels.values())
-
+# implement drop-down menus and save selected crop
     selected_crop = st.selectbox("Select a crop to analyze for possible disease:", crop_options)
+# use mappings to create appropriate parameters for use in prediction
     selected_crop_model = crop_models[selected_crop]
     selected_disease_label = disease_labels[selected_crop]
     selected_image_dim = image_dims[selected_crop]
     predicted_class = ""
     confidence = 0.0
     
-   
+  # create a container to upload an image  
     uploaded_image = st.file_uploader("Next, upload an image of your chosen crop.", type=["jpg", "png", "jpeg"])
+  # create run model button
     run_model_button = st.button("Run Model")
+  # set up empty containers for diagnosis
     predicted_class_container = st.empty()
     predicted_confidence_container = st.empty()
     description_container = st.empty()
     image_container = st.empty()
     
-# Save and display the uploaded image, if possible
+  # Display components as approriate
     if uploaded_image is not None and run_model_button:
         image_container.image(uploaded_image, caption="Uploaded Image", use_column_width=True)
         predicted_class, confidence = predict_image(uploaded_image, selected_crop_model, selected_disease_label, selected_image_dim)
@@ -175,10 +176,6 @@ def run():
         with open(disease_files[predicted_class], "r") as file:
             file_contents = file.read()
         description_container.write(file_contents, language="text")
-
-
-# Display the contents of the text file with syntax highlighting
-            
     
 # Load crop detection models
     mango_model = keras.models.load_model('mango_disease_model81.h5')
@@ -187,13 +184,6 @@ def run():
     tomato_model = keras.models.load_model('tomatoplant_disease_model90.h5')
     cauliflower_model = keras.models.load_model('cauliflower_disease_model85.h5')
     
-    
-    st.markdown(
-        """
-       
-    """
-    )
-
 
 if __name__ == "__main__":
     run()
